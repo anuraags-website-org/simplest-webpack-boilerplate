@@ -62,9 +62,4 @@ module.exports = {
       loader: 'url-loader?limit=50000'
     }]
   },
-  devServer: {
-    contentBase: path.resolve(__dirname, '..', 'src'),
-    publicPath: '/',
-    historyApiFallback: true
-  },
 }
