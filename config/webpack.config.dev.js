@@ -6,11 +6,6 @@ var HtmlWebpackPlugin = require('html-webpack-plugin');
 const baseConfig = require('./webpack.config.base.js');
 
 module.exports = merge(baseConfig, {
-  output: {
-    publicPath: '/',
-    filename: '[name].js',
-    sourceMapFilename: '[name].[chunkhash].map',
-  },
   plugins: [
     new webpack.EnvironmentPlugin([
       'NODE_ENV',
